@@ -1,0 +1,27 @@
+{
+    "php.validate.executablePath": "C:/xampp/php/php.exe",
+    "workbench.colorTheme": "Default Light+",
+    "editor.accessibilitySupport": "on",
+    "security.workspace.trust.untrustedFiles": "open",
+    "redhat.telemetry.enabled": true,
+    "java.project.referencedLibraries": [
+   
+    ],
+    "cmake.options.advanced": {
+    "build": {
+    "statusBarVisibility": "inherit",
+    "inheritDefault": "visible"
+    },
+    "launch": {
+    "statusBarVisibility": "inherit",
+    "inheritDefault": "visible"
+    },
+    "debug": {
+    "statusBarVisibility": "inherit",
+    "inheritDefault": "visible"
+    }
+    },
+    "workbench.settings.applyToAllProfiles": [
+   
+    ]
+   }
