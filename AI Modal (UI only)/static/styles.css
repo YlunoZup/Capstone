@@ -1,4 +1,3 @@
-/* Dark Mode Theme Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -99,9 +98,9 @@
 }
 
 .chatbot-content {
-display: flex; /* Enable flexbox */
-flex-direction: column; /* Align messages vertically */
-align-items: flex-start; /* Default alignment for bot messages */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 flex-grow: 1;
 overflow-y: auto;
 padding: 15px;
@@ -117,16 +116,16 @@ color: #ccc;
 }
 
 .user-message {
-align-self: flex-end; /* Push user messages to the right */
+align-self: flex-end;
 display: inline-block;
 margin-bottom: 10px;
 padding: 10px;
 background-color: rgba(0, 123, 255, 0.2);
 border-radius: 8px;
 color: #fff;
-max-width: calc(80%); /* Prevents the bubble from taking full width */
+max-width: calc(80%); 
 word-wrap: break-word;
-text-align: left; /* Ensures text inside the bubble is aligned properly */
+text-align: left;
 }
 
 
@@ -180,7 +179,6 @@ text-align: left; /* Ensures text inside the bubble is aligned properly */
     color: white;
 }
 
-/* Animations */
 @keyframes slide-up {
     from {
         transform: translateY(20px);
