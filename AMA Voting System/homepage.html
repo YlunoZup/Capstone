@@ -1,0 +1,287 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="assets/css/homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <div class="header-container">
+            <!-- AMA Logo -->
+            <img src="assets/images/AMA.png" alt="AMA Logo">
+
+             <!-- Menu Bar -->
+             <div class="menu-bar">
+               <span class="menu-toggle">
+                   <i class="fa-solid fa-bars"></i> <!-- Initial Hamburger Icon -->
+               </span>
+               <p id="menuText">Menu</p> <!-- Initial text is 'Menu' -->
+           </div>
+
+            <!-- AMA3 Logo (Right-Aligned) -->
+    <img class="ama3-logo" src="assets/images/AMA3.png" alt="AMA3 Logo">
+           
+
+    <!-- Student Hub -->
+    <div class="student-hub">
+      Student Hub
+  </div>
+  
+      <!-- Profile Section -->
+    <div class="profile-info">
+      <div class="user-info">
+          <i class="fa-solid fa-user"></i>
+          <span>Puzon, Ulysses Kyle Rasonabe (24000924610)</span>
+      </div>
+  </div>
+
+  <div id="notificationBell" class="notification-bell">
+   <i class="fa-regular fa-bell"></i>
+</div>
+
+  <!-- Live Date and Time -->
+<div id="dateTime"></div>
+
+
+      <!-- Modal -->
+<div id="menuModal" class="modal">  
+   <div class="modal-content">
+       <span id="closeModal"&times;></span>
+       <ul class="nav-menu">
+               <li><a href="#"><i class="fa-regular fa-folder"></i> Home</a></li>
+               <li><a href="#"><i class="fa-regular fa-folder"></i> My Profile</a></li>
+               <li><a href="#"><i class="fa-solid fa-check-to-slot"></i> KCB Election</a></li>
+               <li><a href="#"><i class="fa-regular fa-folder"></i> Logout</a></li>
+            </ul>
+         </div>
+      </div>
+
+        </div>
+        <!-- Profile Container -->
+    <div class="profile-container">
+        <!-- Header Section inside Profile Container -->
+        <div class="profile-header">
+            <p>PROFILE</p>
+        </div>
+
+        <!-- Small Container inside Profile -->
+        <div class="small-container">
+            <!-- Add your content here -->
+        </div>
+
+        <!-- Personal Information below Small Container -->
+        <div class="personal-info">
+            <p>PUZON, ULYSSE SKYLE RASONABE</p>
+            <p>AMACC - DAVAO</p>
+            <p>BS in Computer Science</p>
+            <img src="assets/images/home.png" alt="Home">
+        </div>
+
+        <div class="usn">   
+            <p>24000924610</p>
+        </div>
+    </div>
+    
+
+        <!-- Rating Container -->
+        <div class="rating-container">
+            <div class="rating-header">
+                <p>Daily Class Rating</p>
+            </div>
+            <!-- Small Container inside Profile -->
+        <div class="schedule-container">
+            <div class="schedule-header"></div>
+            <p>You don't have any classes scheduled for today.</p>
+            <!-- Footer inside the container -->
+    <div class="schedule-footer">
+        <p><span class="angle-brackets">&lt;</span> Page <span id="current-page">0</span> of <span id="total-pages">0</span> <span class="angle-brackets">&gt;</span></p>
+    </div>
+            </div>
+        </div>
+            
+        </div>
+
+        <!-- Threads Container -->
+<div class="threads-container">
+    <div class="threads-header">
+        <p>COMMUNICATION THREADS:</p>
+    </div>
+
+    <!-- Thread List Section -->
+    <div class="thread-list">
+        <!-- Existing thread items -->
+        <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Nov 07, 2024</code></i>
+               <br>Dear Students,<br><br><br>
+         Are you thrilled to meet your OLC and classmates?<br><br><br>
+         Goodnews ! Starting today, November 7, every strand has a schedule of onsite activities under the (3LP) Lifelong Life-wide Learning Program (formerly Homeroom).<br><br>
+         Please reach out to your respective Sales Team Leader (STL)/ Sales Admin Assistant (SAA) Officers and Academic Coordinators for the 3LP schedules.<br><br>
+         Thank you, and see you!
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Sep 06, 2024</code></i>
+               <br>Dear students, Please be advised that all the schedules and other times indicated and printed are PH Time. Thank you.
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Aug 30, 2024</code></i>
+               <br>Dear Students, for the live streaming of students orientation, please follow the AMAESTV link below and attend at 10AM for NEW Students and 2PM for the OLD SHS Students. Thanks you and see you there!
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Aug 08, 2024</code></i>
+               <br>
+         REMINDER ON PAYMENTS:
+         Please pay only though our official payment channels like GCash, Paynamics and the like.
+         NEVER pay directly to employees / agents specially if they are asking you to send to their personal accounts.
+         AMAES will not recognize payments that did not pass through the official payment channels.
+         Please be guided.
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Jul 28, 2024</code></i>
+               <br>
+         Please be advised that Payment Channel “711 Connect” under Responsive Payment Front End (RPF) Service will be temporarily disabled from July 27, 2024 (Wednesday) to August 2, 2024 (Tuesday). Paynamics will be doing some patch updates to migrate the existing connection to our latest infrastructure.
+         <br>
+         All Reference Number Generated before July 27, 2024 can still be used to make payment in “711 Connect” branches.
+         <br>
+         We will advise once we have re-enabled the Payment Channel “711 Connect”.
+         <br>
+         Should you have any questions or clarifications, feel free to contact us at 8-330-8772 or 7-751-0592 or email us at merchant@paynamics.net.
+         <br>
+         Thank you for your attention.
+         <br>
+         Paynamics Merchant Support
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Feb 04, 2024</code></i>
+               <br>Dear SHS Students, Final Grades for 1st sem (2112) will be posted on Monday (Feb 7) noon.
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Jan 03, 2024</code></i>
+               <br><b>PAYNAMICS ADVISORY</b><br><br>
+         Please be informed that we will undergo maintenance activities on the following dates:<br><br>January 3, 17, 31, 2024; 01:00 – 03:00 AM
+                                       February 14, 28, 2024; 01:00 – 03:00 AM<br><br>
+         
+         The following transactions that passes through our Paygate and DGate services may encounter intermittent connection within the duration of the said activities:<br>
+         
+         1. Credit Card Transactions<br>
+         
+         2. Wallet Transactions: All e-wallet payment channels which includes GCash, Paymaya, Coins, Wechat, and Alipay<br>
+         
+         3. Online Bank Transfer: All payment through BPI, and UBP<br>
+         
+         4. Online Bills Payment: During this period we cannot generate reference numbers for all non-bank over the counter channels including: Banco De Oro, Union Bank of the Philippines, United Coconut Planters Bank, Security Bank and Philippines National Bank<br>
+         
+         5. Bank Over the Counter: During this period we cannot generate reference numbers for all nonbank over the counter channels including: Banco De Oro, Union Bank of the Philippines, United Coconut Planters Bank and Philippines National Bank<br>
+         
+         6. Non-bank Over the Counter: During this period we cannot generate reference numbers for all non-bank over the counter channels including: 7-11, Cebuana, MLhuillier, ECpay, Etap, Cliqq, Posible, Truemoney, Expresspay, and SM Bills Payment<br>
+         
+         7. Ebiller Service/Portal: Email Billing (Ebilling) Terminal is a payment system that allows merchant to generate an electronic billing/invoice to be sent to their respective customers for billing/invoice presentment and payment<br>
+         
+         8. Webterminal Portal: Refund and Reversal Portal<br><br>
+         
+         <b>IMPORTANT: Please note that all reference numbers generated prior to the scheduled maintenance above can still be accepted on payment channels. Customers can still pay via over the counter during the scheduled maintenance.</b><br><br>
+         
+         Please be guided accordingly. Feel free to contact us at 8-330-8772 or 7-751-0592 or email us at merchant@paynamics.net.<br><br>
+         
+         Paynamics Merchant Support
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Nov 11, 2023</code></i>
+               <br>College students who were able to settle their midterm exams fee on or before the cutoff of Nov 9, 2023 ( 11:59pm) can still take the exams up to Nov 12, 2023
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Nov 02, 2023</code></i>
+               <br>Advisory to all college students: <br><br>
+         
+         Midterm Exams will be on November 5, 8 and 9 and reminding that you have to settle all your Midterm dues before November 5 to avoid inconveniences.<br><br>
+         
+         Please be advised.
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Nov 02, 2023</code></i>
+               <br>Dear SHS students,<br><br>Please be informed that the First Quarter Exam for SHS on November 8-12, 2023 will be a sliding schedule in order to avoid the traffic in LMS and bulk of users in a single day<br><br>The schedule for SHS as follows: <br>November 8-9 - Grade 12 <br>November 10-11 - Grade 11 <br>November 12 - all late takers
+            </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;"></code></i>
+               <br>
+           Apply Student ID online <a href="/IDReqStudentDashboard/StudentDashboard">here</a>  
+           <br>
+           <a href="https://fb.watch/f2NPpLZ0we" target="_blank" rel="noreferrer">AMA SHS Orientation Video</a><br><br><br>
+           Please be reminded that IDs will be released from 8AM-5PM only (except holidays). Should you have any concerns, kindly contact us thru the official social media pages.<br><br><br>
+           For concerns about your ID, please make sure that your name is spelled correctly. Any spelling mistake will not be accepted. Only requests made by the students themselves will be processed. Requests made by other persons will be automatically declined.<br>
+           Requirements for the ID Application:
+           <br> <br> 1. Online Student ID Request<br>
+           <br> 2. School Fees Paid<br>
+           <br> 3. Photocopy of BIRTH CERTIFICATE (for Freshmen only)<br>
+           <br> 4. Valid ID for verification purposes
+           </div>
+         </li>
+         <li class="list-group-item d-flex">
+            <img src="assets/images/announcement.png" class="mr-3" height="40" alt="">
+            <div>
+               <i><code style="color: #EC5C9E;">Oct 25, 2023</code></i>
+               <br>UPDATE: We are still working on fixing the connectivity issues in some of our sites. Sorry for the inconvenience.
+            </div>
+         </li>
+    </div>
+</div>
+
+        <!-- Adviser Details Section -->
+<div class="adviser-container">
+    <div class="adviser-header">
+        <p>YOUR ADVISER DETAILS:</p>
+    </div>
+    <div class="adviser-details">
+        <ul>
+            <li><strong>AI Fundamentals</strong> - Dingding, Joshua</li>
+            <li><strong>Understanding the Self</strong> - Ramayla, Melannie</li>
+            <li><strong>Purposive Communication 1</strong> - Ramayla, Melannie</li>
+            <li><strong>Computer Programming 1</strong> - Dingding, Joshua</li>
+            <li><strong>Calculus 1</strong> - Lastimosa, Leonila</li>
+            <li><strong>Mathematics for the Modern World</strong> - Lastimosa, Leonila</li>
+            <li><strong>Computing Fundamentals</strong> - Dingding, Joshua</li>
+            <li><strong>Euthenics 1</strong> - Lastimosa, Leonila</li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="bottom-space"></div> <!-- Adds extra space at the bottom -->
+
+        <script src="assets/js/homepage.js"></script>
+    </body>
+    </html>
