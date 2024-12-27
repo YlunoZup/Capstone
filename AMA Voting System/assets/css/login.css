@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EDEFF1;
+    margin: 0;
+    position: relative;
+}
+
+/* Image outside the container but on top */
+.login-image {
+    position: absolute;
+    top: 160px; /* Adjusts the position of the image above the login container */
+    left: 30.2%; /* Centers the image horizontally */
+    transform: translateX(-50%); /* Centers the image more accurately */
+    width: 150px; /* Image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Second image below the first one */
+.login-image-2 {
+    position: absolute;
+    top: 160px; /* Adjust the position below the first image */
+    left: 54%; /* Centers the second image horizontally */
+    transform: translateX(-50%); /* Centers the second image */
+    width: 265px; /* Image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.login-container {
+    width: 370px;
+    height: 360px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the container */
+    position: relative; /* Keeps it relative to the image */
+}
+
+h4 {
+    text-align: left; /* Aligns the "Login" text to the left */
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%; /* Takes full width to align text properly */
+    margin-bottom: 20px; /* Adds spacing between the title and form */
+}
+
+        .image-container {
+    width: 370px;  /* Set desired width */
+    height: 60px;  /* Adjust height as needed */
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+    padding: 10px;
+    margin-top: 55px;  /* Adjust margin as needed */
+    display: flex;
+    justify-content: center;  /* Centers the content horizontally */
+    align-items: center;  /* Ensures content is vertically centered */
+}
+
+.image-container img {
+    max-width: 500%;  /* Makes the image responsive to container's width */
+    max-height: 410%;  /* Keeps the image's height within the container */
+    object-fit: center;  /* Ensures the image scales properly within the container */
+}
+
+
+
+.announcement-container {
+    width: 506px;
+    height: 500px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  /* Ensure that child elements don't overflow the container */
+}
+
+.scrollable-announcements {
+    max-height: calc(100% - 40px); /* Subtracting padding to use the remaining space */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding-right: 10px; /* Adjust for scrollbar visibility */
+}
+
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    width: 330px;
+    height: 50px;
+    border-radius: 11px;
+}
+
+.btn-login {
+    background-color: #9982FF;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    width: 100%;
+    height: 45px;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #7f65d8; /* Slightly darker shade for hover */
+}
+
+.btn-login:active {
+    background-color: #9982FF; /* Keep the original color when clicked */
+    opacity: 1; /* Ensure the button remains fully opaque */
+    box-shadow: none; /* Remove any active button shadow effect if present */
+}
+
+
+.forgot-password {
+    color: #FF0000;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.form-control::placeholder {
+    color: #888888;
+}
+
+.form-control {
+    background-color: #F1F1F1;
+}

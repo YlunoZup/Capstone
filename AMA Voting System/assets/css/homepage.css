@@ -1,0 +1,494 @@
+/* General body style */
+body {
+    margin: 0;
+    background-color: #EDEFF1; /* Background for the whole page */
+    font-family: Arial, sans-serif;
+}
+
+/* Header container */
+.header-container {
+    height: 80px;
+    background-color: #FFFFFF; /* White background */
+    display: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    position: fixed; /* Fixes the header to the top of the page */
+    top: 0; /* Ensures the header stays at the top */
+    left: 0;
+    width: 100%; /* Ensures the header spans the full width of the page */
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+/* Logo Styling */
+.header-container img {
+    height: 50px; /* Adjust height as needed */
+    margin-bottom: 5px; /* Space between logo and menu bar */
+}
+
+/* AMA3 Logo Styling */
+.ama3-logo {
+    position: absolute; /* Position it absolutely within the parent container */
+    width: 240px;    
+    top: 35%; /* Position it vertically in the center */
+    right: 480px; /* Push it towards the right edge of the parent container */
+    transform: translateY(-50%); /* Adjust vertical positioning to center it */
+    height: 40px; /* Adjust the size of AMA3 logo */
+}
+
+/* Change the color of the text inside the <span> */
+.profile-info .user-info span {
+    color: #4C4C4C; /* Change this to the color you want */
+}
+
+/* My Profile Section */
+.profile-info {
+    position: absolute;
+    align-items: center;
+    font-size: 16px; /* Adjust font size */
+    position: absolute;
+    right: 100px; /* Adjust right position for proper spacing */
+    top: 30px;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Space between the icon and text */
+    font-size: 16px; /* Adjust font size */
+}
+.user-info i {
+    margin-right: 5px; /* Space between the icon and text */
+}
+
+.notification-bell {
+    position: absolute;
+    top: 28px; /* Adjust to align with the top of the bell */
+    right: 465px; /* Adjust to align with the right of the bell */
+    color: #7F7F7F; /* Text color */
+    font-size: 25px; /* Font size of the badge */
+    width: 18px; /* Width of the badge */
+    height: 18px; /* Height of the badge */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#dateTime {
+    font-size: 12px; /* Adjust font size */
+    color: #333; /* Text color */
+    position: absolute; /* Position it in the header */
+    top: 65px; /* Adjust top to fit */
+    right: 105px; /* Adjust right to fit */
+}
+
+/* Student Hub Styles */
+.student-hub {
+    color: #A80D14; /* Red text color */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 15px; /* Font size for the text */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    position: absolute; /* Position it absolutely in the header */
+    top: 50%; /* Vertically center it */
+    left: -53px; /* Align it to the left edge */
+    transform: translateY(-50%) rotate(-90deg); /* Rotate the text to face right */
+    transform-origin: center; /* Keep the text's position while rotating */
+    z-index: 9999; /* Make sure it's on top of other elements */
+}
+
+
+
+/* Menu Bar */
+.menu-bar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.menu-bar span {
+    font-size: 20px; /* Size of the triple dash */
+    margin-right: 10px; /* Space between the dash and text */
+    color: #4C4C4C;
+}
+
+.menu-bar p {
+    margin: 0;
+    font-size: 16px;
+    color: #4C4C4C; /* Text color */
+}
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position for overlay */
+    top: -560px; /* Initially above the screen */
+    right: 730px;
+    width: 100%; /* Full screen width */
+    height: 100%; /* Full screen height */
+    background-color: transparent;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: top 0.5s ease-in-out; /* Smooth transition for top property */
+}
+
+.modal.show {
+    top: -25.3%; /* Final position when modal is shown */
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px; /* You can adjust the width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu li a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-menu li a i {
+    margin-right: 10px;
+}
+
+.nav-menu li a:hover {
+    color: #f0a500;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #f0a500;
+}
+
+/* Transition for transforming Hamburger to X */
+.menu-bar.open span {
+    transform: rotate(90deg); /* Rotate the hamburger icon to make it 'X' */
+    font-size: 35px; /* Optional: Adjust size for the 'X' */
+    content: '×'; /* Change the content of the hamburger to 'X' */
+}
+
+/* Profile Container */
+.profile-container {
+    position: absolute;
+    top: 150px; /* Y position */
+    left: 220px; /* X position */
+    width: 620px; /* Width */
+    height: 415px; /* Height */
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px; /* Corner radius */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+    padding-top: 37px; /* Space for header */
+} 
+
+/* Header inside Profile Container */
+
+.profile-header {
+    height: 0px; /* Height for the header */
+    background-color: #FFFFFF; /* White background */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: left; /* Aligns the text to the left */
+    padding-left: 20px; /* Adds spacing from the left */
+    padding-top: 10px;
+    font-size: 15px; /* Increases font size */
+    font-weight: bold;
+    color: #0F83FF; /* Text color */
+    border-bottom: 2px solid #DFDFDF; /* Optional: Border under the header */
+}
+
+.profile-header p {
+    align-self: flex-start; /* Aligns the text to the top of the header */
+    margin-top: -30px; /* Adjust this value to move the text closer to the top */
+}
+
+/* Small Container inside Profile */
+.small-container {
+    width: 144px;
+    height: 153px;
+    background-color: #F5F5F5; /* Light gray background */
+    margin-top: 20px; /* Adjusts space above the container */
+    margin-left: 40px; /* Adjust this value to move the container to the left */
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+}
+
+/* Personal Information below Small Container */
+.personal-info {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.personal-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.usn {
+    text-align: right;
+    margin-right: 150px;
+    margin-top: -250px;
+    font-weight: bold;
+} 
+
+.usn p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+    font-size: 20px; /* Increases font size */
+}
+
+
+.rating-container {
+    position: absolute;
+    top: 150px; /* Y position */
+    left: 870px; /* X position */
+    width: 800px; /* Width */
+    height: 450px; /* Height */
+    background-color: #800000; /* White background */
+    border-radius: 8px; /* Corner radius */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+}
+
+.rating-header {
+    height: 35px; /* Height for the header */
+    background-color: #800000; /* White background */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: left; /* Aligns the text to the left */
+    padding-left: 20px; /* Adds spacing from the left */
+    padding-top: 10px;
+    font-size: 15px; /* Increases font size */
+    font-weight: semibold;
+    color: #FFFFFF; /* Text color */
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom: 2px solid #700000; /* Optional: Border under the header */
+}
+
+.schedule-container {
+    width: 735px;
+    height: 340px;
+    background-color: #FFFFFF; /* Light gray background */
+    margin-top: 20px; /* Adjusts space above the container */
+    margin-left: 30px; /* Adjust this value to move the container to the left */
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+}
+
+.schedule-container p {
+    font-weight: bold;
+    margin: absolute; 
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 120px;
+    font-size: 14px;
+    color: #333;
+}
+
+.schedule-header {
+    height: 35px; /* Height for the header */
+    background-color: #FAFAFB; /* White background */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: left; /* Aligns the text to the left */
+    padding-left: 20px; /* Adds spacing from the left */
+    padding-top: 10px;
+    font-size: 15px; /* Increases font size */
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom: 2px solid #ccc; /* Optional: Border under the header */
+}
+
+.schedule-footer {
+    width: 735px;
+    height: 40px;
+    background-color: #ffffff; /* Light background color */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Center text horizontally */
+    margin-top: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: 1px solid #ccc; /* Optional: adds a line at the top */
+}
+
+.schedule-footer p {
+    margin: 0;
+}
+
+.schedule-footer span {
+    color: #0F83FF; /* Blue color for the page numbers */
+}
+
+.threads-container {
+    position: absolute;
+    top: 630px; /* Y position */
+    left: 220px; /* X position */
+    width: 1000px; /* Width */
+    height: 400px; /* Height */
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px; /* Corner radius */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+}
+
+.threads-container {
+    width: 100%;
+    max-width: 1000px; /* Adjust the width as needed */
+    margin: 0 auto; /* Centers the container */
+}
+
+
+.thread-list {
+    max-height: 300px; /* Set the maximum height of the scrollable list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.list-group-item {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: flex-start;
+}
+
+.list-group-item img {
+    margin-right: 15px;
+}
+
+.list-group-item div {
+    font-size: 14px;
+}
+
+
+
+.threads-header {
+    height: 35px; /* Height for the header */
+    background-color: #FAFAFB; /* White background */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: left; /* Aligns the text to the left */
+    padding-left: 20px; /* Adds spacing from the left */
+    padding-top: 10px;
+    font-size: 30px; /* Increases font size */
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom: 2px solid #ccc; /* Optional: Border under the header */
+}
+
+.threads-header p {
+    font-weight: bold;
+    margin: absolute; 
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0F83FF;
+}
+
+.adviser-container {
+    position: absolute;
+    top: 630px; /* Y position */
+    left: 1250px; /* X position */
+    width: 420px; /* Width */
+    height: 400px; /* Height */
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px; /* Corner radius */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+}
+
+.adviser-header {
+    height: 35px; /* Height for the header */
+    background-color: #FAFAFB; /* White background */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: left; /* Aligns the text to the left */
+    padding-left: 20px; /* Adds spacing from the left */
+    padding-top: 10px;
+    font-size: 30px; /* Increases font size */
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom: 2px solid #ccc; /* Optional: Border under the header */
+}
+.adviser-header p {
+    font-weight: bold;
+    margin: absolute; 
+    text-align: center;
+    margin-left:0px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0F83FF;
+}
+
+/* Adviser Details */
+.adviser-details ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 10px;
+    margin: 0;
+}
+
+/* Subject Items (list items) */
+.adviser-details li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* 2px bottom border for each subject */
+    font-size: 16px;
+}
+
+/* Styling for the subject name */
+.adviser-details li strong {
+    color: #2c3e50; /* Dark color for subject names */
+}
+
+/* Optional: Styling for the teacher name */
+.adviser-details li {
+    color: #7f8c8d; /* Light grey color for teacher names */
+}
+.bottom-space {
+    height: 1100px; /* Adjust height as needed */
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Image outside and above the login container -->
+        <img src="assets/images/AMA.png" alt="Logo" class="login-image"> <!-- First image -->
+        
+        <!-- Second image below the first one -->
+        <img src="assets/images/AMA2.png" alt="Logo 2" class="login-image-2"> <!-- Second image -->
+
+        <div class="login-container">
+            <h4>Login</h4>
+            <form>
+                <div class="mb-2">
+                    <label for="studentID" class="form-label">StudentID / Email</label>
+                    <input type="email" id="studentID" class="form-control" placeholder="StudentID / Email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-login w-100">Log In</button>
+                <a href="#" class="forgot-password">Forgot/Reset Password?</a>
+            </form>
+
+            <!-- Additional small container -->
+            <div class="image-container">
+                <img src="assets/images/AMA3.png" alt="AMA3" />
+            </div>
+        </div>
+
+        <div class="announcement-container">
+            <h5>Announcements</h5>
+            <ul class="list-group scrollable-announcements">
+                <li class="list-group-item d-flex">
+                    <img src="assets/images/BuddySystem2.jpg" alt="Buddy System" style="width:100%">
+                <li
+                    class="list-group-item d-flex">
+                    <span>
+                        <span class="text-primary">Hey AMAES students! Exciting news! <br> </span>
+                        <b>AMAES Bring Your Buddy: Earn Cash or Tuition FREE!</b> <br>
+                        Bring along your buddies, get them enrolled in any AMAES campus and get rewarded! How it works?
+                        <a class="text-primary" href="https://www.amaes.edu.ph/amaes-bring-your-buddy-earn-cash-or-tuition-free">
+                            Click here
+                        </a>
+                    </span>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Jul 19 2023  3:40PM</code></i>
+                        <br>
+                        Get ready for an epic showdown of the much-awaited #AMAESports2023 National Playoffs on July 22, 2023!
+                        <br>
+                        Don't miss a moment of the action - click GOING via this Event link: 
+                        <a href="https://fb.me/e/15ukAnp3i" target="_blank">FB Event</a> and join us for the live stream!
+                    </div>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Nov  7 2022  3:27PM</code></i>
+                        <br>
+                        Dear Students, <br><br>
+                        Are you thrilled to meet your OLC and classmates? Good news! Starting today, November 7, every strand has a schedule of onsite activities under the (3LP) Lifelong Life-wide Learning Program (formerly Homeroom).<br><br>
+                        Please reach out to your respective Sales Team Leader (STL)/ Sales Admin Assistant (SAA) Officers and Academic Coordinators for the 3LP schedules.<br><br>
+                        Thank you, and see you!
+                    </div>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Sep  6 2022  8:35AM</code></i>
+                        <br>
+                        Dear students, Please be advised that all the schedules and other times indicated and printed are PH Time. Thank you.
+                    </div>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Aug 30 2022  8:51AM</code></i>
+                        <br>
+                        Dear Students, for the live streaming of students orientation, please follow the AMAESTV link below and attend at 10AM for NEW Students and 2PM for the OLD SHS Students. Thank you and see you there!
+                    </div>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Aug  8 2022  4:47PM</code></i>
+                        <br>
+                        REMINDER ON PAYMENTS: Please pay only through our official payment channels like GCash, Paynamics and the like. NEVER pay directly to employees/agents, especially if they are asking you to send to their personal accounts. AMAES will not recognize payments that did not pass through the official payment channels. Please be guided.
+                    </div>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Jul 28 2022  4:58PM</code></i>
+                        <br>
+                        Please be advised that Payment Channel “711 Connect” under Responsive Payment Front End (RPF) Service will be temporarily disabled from July 27, 2022 (Wednesday) to August 2, 2022 (Tuesday). Paynamics will be doing some patch updates to migrate the existing connection to our latest infrastructure.<br>
+                        All Reference Number Generated before July 27, 2022 can still be used to make payment in “711 Connect” branches.<br>
+                        We will advise once we have re-enabled the Payment Channel “711 Connect”.<br>
+                        Should you have any questions or clarifications, feel free to contact us at 8-330-8772 or 7-751-0592 or email us at merchant@paynamics.net.<br>
+                        Thank you for your attention.<br>
+                        Paynamics Merchant Support
+                    </div>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Feb  4 2022  9:19AM</code></i>
+                        <br>
+                        Dear SHS Students, Final Grades for 1st sem (2112) will be posted on Monday (Feb 7) noon.
+                    </div>
+                </li>
+                <li class="list-group-item d-flex">
+                    <img src="https://discipulusv2.amasystem.net/StudentPortal/Assets/files/icons/icon_info.png" class="mr-3" height="40" alt="">
+                    <div>
+                        <i><code>Jan  3 2022 10:56AM</code></i>
+                        <br><b>PAYNAMICS ADVISORY</b><br><br>
+                        Please be informed that we will undergo maintenance activities on the following dates:<br>
+                        January 3, 17, 31, 2022; 01:00 – 03:00 AM<br>
+                        February 14, 28, 2022; 01:00 – 03:00 AM<br><br>
+                        The following transactions that pass through our Paygate and DGate services may encounter intermittent connection during the duration of the maintenance:<br>
+                        <b>IMPORTANT:</b> Please note that all reference numbers generated prior to the scheduled maintenance can still be accepted on payment channels.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>
