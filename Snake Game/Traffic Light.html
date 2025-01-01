@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Traffic Light Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #222;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .traffic-light {
+      width: 250px;
+      height: 70px;
+      background: #222;
+      border-radius: 26px; /* Smaller radius for a subtle modern look */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .light {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(145deg, #777, #555);
+      border-radius: 50%;
+      box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .light.red.active {
+      background: linear-gradient(145deg, #ff3333, #b21f1f);
+      box-shadow: inset 0 4px 6px rgba(255, 0, 0, 0.3), 0 4px 6px rgba(255, 0, 0, 0.4);
+    }
+
+    .light.yellow.active {
+      background: linear-gradient(145deg, #ffcc00, #b38b00);
+      box-shadow: inset 0 4px 6px rgba(255, 204, 0, 0.3), 0 4px 6px rgba(255, 204, 0, 0.4);
+    }
+
+    .light.green.active {
+      background: linear-gradient(145deg, #28a745, #1e7e34);
+      box-shadow: inset 0 4px 6px rgba(40, 167, 69, 0.3), 0 4px 6px rgba(40, 167, 69, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="traffic-light">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>
+
+  <script>
+    const lights = document.querySelectorAll('.light');
+    let currentIndex = 0;
+
+    function changeLight() {
+      // Remove active class from all lights
+      lights.forEach(light => light.classList.remove('active'));
+
+      // Add active class to the current light
+      lights[currentIndex].classList.add('active');
+
+      // Move to the next light
+      currentIndex = (currentIndex + 1) % lights.length;
+    }
+
+    // Change light every 1 second
+    setInterval(changeLight, 1000);
+
+    // Initialize the first light
+    changeLight();
+  </script>
+</body>
+</html>
