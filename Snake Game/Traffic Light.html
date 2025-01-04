@@ -64,20 +64,15 @@
     let currentIndex = 0;
 
     function changeLight() {
-      // Remove active class from all lights
       lights.forEach(light => light.classList.remove('active'));
 
-      // Add active class to the current light
       lights[currentIndex].classList.add('active');
 
-      // Move to the next light
       currentIndex = (currentIndex + 1) % lights.length;
     }
 
-    // Change light every 1 second
     setInterval(changeLight, 1000);
 
-    // Initialize the first light
     changeLight();
   </script>
 </body>
