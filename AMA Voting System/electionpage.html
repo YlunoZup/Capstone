@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Page</title>
+    <link rel="stylesheet" href="assets/css/electionpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-container">
+        <!-- AMA Logo -->
+        <img src="assets/images/AMA.png" alt="AMA Logo">
+
+         <!-- Menu Bar -->
+         <div class="menu-bar">
+           <span class="menu-toggle">
+               <i class="fa-solid fa-bars"></i> <!-- Initial Hamburger Icon -->
+           </span>
+           <p id="menuText">Menu</p> <!-- Initial text is 'Menu' -->
+       </div>
+
+        <!-- AMA3 Logo (Right-Aligned) -->
+<img class="ama3-logo" src="assets/images/AMA3.png" alt="AMA3 Logo">
+       
+
+<!-- Student Hub -->
+<div class="student-hub">
+  Student Hub
+</div>
+
+  <!-- Profile Section -->
+<div class="profile-info">
+  <div class="user-info">
+      <i class="fa-solid fa-user"></i>
+      <span>Puzon, Ulysses Kyle Rasonabe (24000924610)</span>
+  </div>
+</div>
+
+<div id="notificationBell" class="notification-bell">
+<i class="fa-regular fa-bell"></i>
+</div>
+
+<!-- Live Date and Time -->
+<div id="dateTime"></div>
+
+
+  <!-- Modal -->
+<div id="menuModal" class="modal">  
+<div class="modal-content">
+   <span id="closeModal"&times;></span>
+   <ul class="nav-menu">
+           <li><a href="#"><i class="fa-regular fa-folder"></i> Home</a></li>
+           <li><a href="#"><i class="fa-regular fa-folder"></i> My Profile</a></li>
+           <li><a href="#"><i class="fa-solid fa-check-to-slot"></i> KCB Election</a></li>
+           <li><a href="#"><i class="fa-regular fa-folder"></i> Logout</a></li>
+        </ul>
+     </div>
+  </div>
+
+  <div class="action-container">
+    <div class="action-header">
+        <p>Actions</p>
+    </div>
+    <div class="action-content">
+        <button class="action-button">Candidate</button>
+        <button class="action-button">Candidate</button>
+        <button class="action-button">Candidate</button>
+    </div>
+</div>
+
+        
+
+  <div class="bottom-space"></div>
+
+  <script src="assets/js/homepage.js"></script>
+</body>
+</html>
