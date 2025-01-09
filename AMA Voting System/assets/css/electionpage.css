@@ -1,0 +1,261 @@
+/* General body style */
+body {
+    margin: 0;
+    background-color: #EDEFF1; /* Background for the whole page */
+    font-family: Arial, sans-serif;
+}
+
+/* Header container */
+.header-container {
+    height: 80px;
+    background-color: #FFFFFF; /* White background */
+    display: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    position: fixed; /* Fixes the header to the top of the page */
+    top: 0; /* Ensures the header stays at the top */
+    left: 0;
+    width: 100%; /* Ensures the header spans the full width of the page */
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+/* Logo Styling */
+.header-container img {
+    height: 50px; /* Adjust height as needed */
+    margin-bottom: 5px; /* Space between logo and menu bar */
+}
+
+/* AMA3 Logo Styling */
+.ama3-logo {
+    position: absolute; /* Position it absolutely within the parent container */
+    width: 240px;    
+    top: 35%; /* Position it vertically in the center */
+    right: 480px; /* Push it towards the right edge of the parent container */
+    transform: translateY(-50%); /* Adjust vertical positioning to center it */
+    height: 40px; /* Adjust the size of AMA3 logo */
+}
+
+/* Change the color of the text inside the <span> */
+.profile-info .user-info span {
+    color: #4C4C4C; /* Change this to the color you want */
+}
+
+/* My Profile Section */
+.profile-info {
+    position: absolute;
+    align-items: center;
+    font-size: 16px; /* Adjust font size */
+    position: absolute;
+    right: 100px; /* Adjust right position for proper spacing */
+    top: 30px;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Space between the icon and text */
+    font-size: 16px; /* Adjust font size */
+}
+.user-info i {
+    margin-right: 5px; /* Space between the icon and text */
+}
+
+.notification-bell {
+    position: absolute;
+    top: 28px; /* Adjust to align with the top of the bell */
+    right: 465px; /* Adjust to align with the right of the bell */
+    color: #7F7F7F; /* Text color */
+    font-size: 25px; /* Font size of the badge */
+    width: 18px; /* Width of the badge */
+    height: 18px; /* Height of the badge */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#dateTime {
+    font-size: 12px; /* Adjust font size */
+    color: #333; /* Text color */
+    position: absolute; /* Position it in the header */
+    top: 65px; /* Adjust top to fit */
+    right: 105px; /* Adjust right to fit */
+}
+
+/* Student Hub Styles */
+.student-hub {
+    color: #A80D14; /* Red text color */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 15px; /* Font size for the text */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    position: absolute; /* Position it absolutely in the header */
+    top: 50%; /* Vertically center it */
+    left: -53px; /* Align it to the left edge */
+    transform: translateY(-50%) rotate(-90deg); /* Rotate the text to face right */
+    transform-origin: center; /* Keep the text's position while rotating */
+    z-index: 9999; /* Make sure it's on top of other elements */
+}
+
+
+
+/* Menu Bar */
+.menu-bar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.menu-bar span {
+    font-size: 20px; /* Size of the triple dash */
+    margin-right: 10px; /* Space between the dash and text */
+    color: #4C4C4C;
+}
+
+.menu-bar p {
+    margin: 0;
+    font-size: 16px;
+    color: #4C4C4C; /* Text color */
+}
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position for overlay */
+    top: -560px; /* Initially above the screen */
+    right: 730px;
+    width: 100%; /* Full screen width */
+    height: 100%; /* Full screen height */
+    background-color: transparent;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: top 0.5s ease-in-out; /* Smooth transition for top property */
+}
+
+.modal.show {
+    top: -25.3%; /* Final position when modal is shown */
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px; /* You can adjust the width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu li a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-menu li a i {
+    margin-right: 10px;
+}
+
+.nav-menu li a:hover {
+    color: #f0a500;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #f0a500;
+}
+
+/* Transition for transforming Hamburger to X */
+.menu-bar.open span {
+    transform: rotate(90deg); /* Rotate the hamburger icon to make it 'X' */
+    font-size: 35px; /* Optional: Adjust size for the 'X' */
+    content: '×'; /* Change the content of the hamburger to 'X' */
+}
+
+.action-container {
+    width: 285px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    position: absolute;
+    left: 50px; /* Adjust this value if you need specific positioning */
+    top: 120px;
+}
+
+.action-header {
+    background-color: #800000;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 2px 13px; 
+    font-family: 'Times New Roman', serif;
+    font-size: 29px; 
+    height: 70px;
+    text-align: left; 
+    line-height: 1px; 
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.action-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.action-button {
+    background-color: #6C757D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+
+.action-button:hover {
+    opacity: 0.9;
+}
