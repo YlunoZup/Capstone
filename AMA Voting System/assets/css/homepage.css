@@ -89,17 +89,17 @@ body {
 
 /* Student Hub Styles */
 .student-hub {
-    color: #A80D14; /* Red text color */
-    padding: 10px 20px; /* Padding around the text */
-    font-size: 15px; /* Font size for the text */
-    font-weight: bold; /* Bold text */
-    text-align: center; /* Center the text */
-    position: absolute; /* Position it absolutely in the header */
-    top: 50%; /* Vertically center it */
-    left: -53px; /* Align it to the left edge */
-    transform: translateY(-50%) rotate(-90deg); /* Rotate the text to face right */
-    transform-origin: center; /* Keep the text's position while rotating */
-    z-index: 9999; /* Make sure it's on top of other elements */
+    color: #A80D14; 
+    padding: 10px 20px; 
+    font-size: 15px; 
+    font-weight: bold;
+    text-align: center; 
+    position: absolute; 
+    top: 50%; 
+    left: -53px;
+    transform: translateY(-50%) rotate(-90deg); 
+    transform-origin: center;
+    z-index: 9999; 
 }
 
 
