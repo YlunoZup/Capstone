@@ -11,7 +11,7 @@ if (!isset($_SESSION['loggedin'])) {
 // Retrieve limit from URL, default to 10 if not set
 $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 10;
 
-// Handle form submission
+// submission form
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
